@@ -142,6 +142,16 @@ f2.ModifierCellule("DUPOND", mat);
 cout << "resultats Moyenne matiere :" << f2.MoyenneMatiere(mat)<< endl;
 }
 
+void TAffichageTableur(){
+    string tab_eleves[] = {"DUPOND","DURANT", "DUBOIS"};
+    string tab_matieres[] = {"MATHS","PHYSIQUE", "CHIMIE"};
+    vector<string> v_e( tab_eleves, tab_eleves+3);
+    vector<string> v_m( tab_matieres, tab_matieres+3);
+    Feuille f2(v_e, v_m);
+    f2.Afficher();
+    // j'ai également changé la valeur par défault du constructeur par défaut de Cellule pour remplir le tableau 
+}
+
 
 
 int main() {
@@ -149,7 +159,8 @@ cout << "!!!Hello TPTableur !!! " << endl;
 //TCellule();
 //TLigne();
 //TFeuille();
-TMoyennes();
+//TMoyennes();
+//TAffichageTableur(); 
 cout << "!!!Bye TPTableur !!! " << endl;
 return 0;
 }

@@ -22,6 +22,8 @@ class Feuille : public std::map<std::string, Ligne>
 
 		//Methodes pour effectuer des tests uniquement
 		void	Afficher() const;	// Afficher le contenu
+        void    AfficherEnTetes() const; 
+        void    AfficherModeTableur() const;  
 		void	Saisir();
         void    ModifierCellule(std::string, std::string); 	
         void    InsererLibelleColonne(); 

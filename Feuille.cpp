@@ -6,7 +6,7 @@ using namespace std;
 #include "Cellule.h"
 #include "Ligne.h"
 #include "Feuille.h"
-#define DEBUG
+
 
 
 
@@ -40,6 +40,22 @@ void	Feuille:: Afficher() const{
         it->second.Afficher();   
     }
 }
+
+
+void    Feuille::AfficherEnTetes() const{
+    vector<string> matieresActuelles ;
+    Ligne premiereLigne = (*this).begin()->second ; 
+   for (auto it = premiereLigne.begin(); it != premiereLigne.end(); ++it) {
+        matieresActuelles.push_back(it->first); 
+    }
+    
+}
+
+void    Feuille::AfficherModeTableur() const{
+    (*this).AfficherEnTetes();
+}
+
+ 
 
 void	Feuille:: Saisir() {
     for (auto it = (*this).begin(); it != (*this).end(); ++it) {

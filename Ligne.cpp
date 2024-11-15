@@ -7,7 +7,6 @@ using namespace std;
 #include "Cellule.h"
 
 
-#define DEBUG
 
 
 Ligne::Ligne()

@@ -10,7 +10,7 @@ using namespace std;
 #include <cassert>
 
 #include "Cellule.h"
-#define DEBUG
+//#define DEBUG
 
 //Les Constructeurs
 ////////////////////////////////////////////////////////////////////////////
@@ -19,8 +19,8 @@ Cellule::Cellule()
 #ifdef DEBUG
 cout << "Cellule :: Constructeur 1"<<endl;
 #endif
-		maValeur=0;
-		maPresence=false;
+		maValeur=16;
+		maPresence=true;
 }
 
 ////////////////////////////////////////////////////////////////////////////
