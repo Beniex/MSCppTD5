@@ -21,9 +21,8 @@ class Ligne: public std::map<std::string, Cellule>
 		Ligne(const std::vector<std::string>& m);	
 
 		//Methodes
-		double	GetValeur() const;	// retourne maValeur
-		void	SetValeur(double v);	// avec controle note entre 0 et 20
-		bool 	EstPresent() const;	// retourne vrai si élève present
+        
+        double  Moyenne() const; 
 
 		// Operateurs
 		bool 	operator == (const Cellule & champ);
@@ -31,7 +30,7 @@ class Ligne: public std::map<std::string, Cellule>
 		//Methodes pour effectuer des tests uniquement
 		void	Afficher() const;	// Afficher le contenu
 		void	Saisir();		// avec controle note entre 0 et 20
-        void    AfficherMatieres();
+        void    AfficherMatieres () const;
         void    AfficherNotes();
 
 

@@ -15,7 +15,7 @@ using namespace std;
 
 #include "Cellule.h"
 #include "Ligne.h"
-//#include "Feuille.h"
+#include "Feuille.h"
 
 void TCellule ()
 {
@@ -71,18 +71,20 @@ lib.push_back("PHYSIQUE");
 lib.push_back("CHIMIE");
 
 Ligne l2(lib);
-}
-/*
+
 l2.Afficher();
-l2.Saisir();
+
 l2.AfficherMatieres();
+
+
+l2.Saisir();
+
 l2.AfficherNotes();
+
 
 cout << "moyenne : " << l2.Moyenne() << endl;
 }
-*/
 
-/*
 
 void TFeuille ()
 {
@@ -92,13 +94,14 @@ string tab_matieres[] = {"MATHS","PHYSIQUE", "CHIMIE", "INFORMATIQUE"};
 vector<string> v_e( tab_eleves, tab_eleves+3);
 vector<string> v_m( tab_matieres, tab_matieres+4);
 Feuille f2(v_e, v_m);
+
 f2.Afficher();
 
 f2.Saisir();
 f2.Afficher();
 
 f2.ModifierCellule("DUPOND","PHYSIQUE");
-f2.ModifierCellule();
+//f2.ModifierCellule();
 f2.Afficher();
 
 cout << "inserer une nouvelle matière : " << endl;
@@ -108,11 +111,8 @@ f2.Afficher();
 cout << "inserer un nouvel etudiant : " << endl;
 f2.InsererLibelleLigne();
 f2.Afficher();
-
 }
-*/
 
-/*
 
 void TMoyennes ()
 {
@@ -130,7 +130,8 @@ cin >> etud;
 f2.ModifierCellule(etud,"MATHS");
 f2.ModifierCellule(etud,"PHYSIQUE");
 f2.ModifierCellule(etud,"CHIMIE");
-cout << "resultats :" << f2.MoyenneEtudiant(etud)<< endl;
+cout << "resultats Moyenne etudiant :" << f2.MoyenneEtudiant(etud)<< endl;
+
 
 string mat;
 cout << "Quelle matiere  ?" << endl;
@@ -138,17 +139,17 @@ cin >> mat;
 f2.ModifierCellule("DUBOIS", mat);
 f2.ModifierCellule("DURANT", mat);
 f2.ModifierCellule("DUPOND", mat);
-cout << "resultats :" << f2.MoyenneMatiere(mat)<< endl;
+cout << "resultats Moyenne matiere :" << f2.MoyenneMatiere(mat)<< endl;
 }
-*/
+
 
 
 int main() {
 cout << "!!!Hello TPTableur !!! " << endl;
-TCellule();
+//TCellule();
 //TLigne();
 //TFeuille();
-//TMoyennes();
+TMoyennes();
 cout << "!!!Bye TPTableur !!! " << endl;
 return 0;
 }
