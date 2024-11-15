@@ -14,7 +14,7 @@ using namespace std;
 #include <map>
 
 #include "Cellule.h"
-//#include "Ligne.h"
+#include "Ligne.h"
 //#include "Feuille.h"
 
 void TCellule ()
@@ -61,7 +61,7 @@ void TCellule ()
   }
 }
 
-/*
+
 void TLigne ()
 {
 
@@ -71,6 +71,8 @@ lib.push_back("PHYSIQUE");
 lib.push_back("CHIMIE");
 
 Ligne l2(lib);
+}
+/*
 l2.Afficher();
 l2.Saisir();
 l2.AfficherMatieres();
